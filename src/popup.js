@@ -4,7 +4,7 @@ var downloadable = "";
 var popup = "";
 chrome.tabs.query({
     active: true,
-	lastFocusedWindow: true
+    lastFocusedWindow: true
 }, function(tabs) {
   var tab = tabs[0];
   domain = getDomain(tab.url)  
